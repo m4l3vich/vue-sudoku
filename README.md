@@ -1,18 +1,38 @@
-# Vue 3 + TypeScript + Vite
+# vue-sudoku
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[Backtracking](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms#Backtracking) Sudoku solving algorithm implementation in TypeScript with a Vue 3 frontend.
 
-## Recommended IDE Setup
+## Running locally 
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Requirements
 
-## Type Support For `.vue` Imports in TS
+- [Node.js](https://nodejs.org) 16 or newer
+- [Yarn](https://yarnpkg.com) package manager
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+### Install dependencies
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+Open Terminal and run:
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+````bash
+git clone https://github.com/m4l3vich/vue-sudoku
+````
+
+This will copy the repository into the local folder. Then go to the repository's folder:
+
+```bash
+cd vue-sudoku
+```
+
+And then install the dependencies:
+
+```bash
+yarn install
+```
+
+After this, run the following command to launch the project locally in development mode:
+
+```bash
+yarn dev
+```
+
+The web app will be available at http://127.0.0.1:4000.
