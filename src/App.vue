@@ -117,7 +117,6 @@ function clearField () {
       :disableControls="isFieldValid"
       @changeDelay="v => looper.delay = v"
       @changeAutomatic="v => looper.automatic = v"
-      @clear="clearField"
       @reset="resetField"
     />
 
@@ -136,9 +135,15 @@ function clearField () {
         <span v-else style="color: red">ВЫКЛ</span>
       </span>
 
-      <span style="grid-column: 1 / 3; color: gray" v-if="editMode">
-        В режиме редактирования можно изменять значения фиксированных ячеек (подсказок, т.е. значения ячеек черного цвета)
-      </span>
+      <template v-if="editMode">
+        <span style="grid-column: 1 / 3; color: gray">
+          В режиме редактирования можно изменять значения фиксированных ячеек (подсказок, т.е. значения ячеек черного цвета)
+        </span>
+
+        <button @click="clearField" style="grid-column: 1 / 3;">
+          ОЧИСТИТЬ ВСЕ ЯЧЕЙКИ
+        </button>
+      </template>
     </div>
   </div>
 </template>
