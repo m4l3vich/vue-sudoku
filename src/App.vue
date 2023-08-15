@@ -99,6 +99,7 @@ function clearField () {
 
   for (const cell of field.cells) {
     cell.value = 0
+    cell.validity = SudokuCellValidityState.Unknown
   }
 
   isFieldValid.value = false

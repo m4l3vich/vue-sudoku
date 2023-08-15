@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { reactive } from 'vue'
 import { SudokuField } from '@/sudoku'
 import SudokuCellVue from './SudokuCell.vue'
 

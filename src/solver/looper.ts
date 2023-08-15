@@ -1,6 +1,6 @@
 import EventEmitter from 'eventemitter3'
 
-const MIN_DELAY = 2
+const MIN_DELAY = 1
 
 export class Looper extends EventEmitter {
   private intval?: number
